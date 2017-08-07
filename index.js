@@ -56,7 +56,7 @@ Polygon.prototype.constructor = Polygon
 Polygon.prototype.numberOfSides = function(){
   return this.sides.length
 }
-Polygon.prototype.perimeter = function() {
+Polygon.prototype.perimeter = function(){
   var p = 0;
   for(var i=0;i< this.sides.length; i++) {
     p += this.sides[i].length;
@@ -91,7 +91,7 @@ function Square(side){
 }
 Square.prototype = Object.create(Rectangle.prototype)
 Square.prototype.constructor = Square
-Square.prototype.listProperties = function() {
+Square.prototype.listProperties = () => {
   var props = "";
   for (var prop in this) {
     if(this.hasOwnProperty(prop)) {
